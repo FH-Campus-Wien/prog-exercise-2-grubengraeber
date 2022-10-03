@@ -4,7 +4,7 @@ import java.util.*;
 
 public class App {
 
-    Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         App exercise2 = new App();
@@ -50,9 +50,24 @@ public class App {
         }
     }
 
-    //todo Task 2
     public void stairs() {
-        // input your solution here
+        System.out.print("n: ");
+        final int ROWS = scanner.nextInt();
+        int counter = 1;
+        if (ROWS <= 0) {
+            System.out.println("Invalid number!");
+        } else {
+            int numbersInRow = 1;
+            for (int row = 0; row < ROWS; row++) {
+                for (int column = 0; column < numbersInRow; column++) {
+                    System.out.print(counter + " ");
+                    counter++;
+                }
+                numbersInRow++;
+                System.out.println();
+            }
+        }
+        
     }
 
     //todo Task 3
