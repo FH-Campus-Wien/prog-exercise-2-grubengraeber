@@ -52,7 +52,7 @@ public class App {
 
     public void stairs() {
         System.out.print("n: ");
-        final int ROWS = scanner.nextInt();
+        int ROWS = scanner.nextInt();
         int counter = 1;
         if (ROWS <= 0) {
             System.out.println("Invalid number!");
@@ -70,9 +70,22 @@ public class App {
         
     }
 
-    //todo Task 3
     public void printPyramid() {
-        // input your solution here
+        final int ROWS = 6;
+        int asterisksCount = 1;
+        String rowString = "";
+
+        for (int row = 0; row < ROWS; row++) {
+            for (int space = 0; space < ROWS - row - 1; space++) {
+                rowString += " ";
+            }
+            for (int asterisks = 0; asterisks < asterisksCount; asterisks++) {
+                rowString += "*";
+            }
+            asterisksCount += 2;
+            System.out.println(rowString);
+            rowString = "";
+        }
     }
 
     //todo Task 4
