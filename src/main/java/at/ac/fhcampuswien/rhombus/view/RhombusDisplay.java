@@ -5,10 +5,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class RhombusDisplay {
-    //TODO
     public void showRhombus(char sign, int size) {
-        String pyramid = getPyramid(size/2 + 1, sign);
-        String reversedPyramid = getReversedPyramid(size/2, sign);
+        String pyramid = getPyramid(size / 2 + 1, sign);
+        String reversedPyramid = getReversedPyramid(size / 2, sign);
         System.out.print(pyramid + reversedPyramid);
     }
 
@@ -27,7 +26,7 @@ public class RhombusDisplay {
         String pyramid = "";
         int characterCount = 1;
         for (int row = 0; row < pyramidSize; row++) {
-            String spaces = getSpaces(pyramidSize/2 - row + 1);
+            String spaces = getSpaces(pyramidSize / 2 - row + 1);
             String rowCharacters = getRightCharacters(sign, characterCount);
             pyramid += spaces;
             pyramid += rowCharacters;

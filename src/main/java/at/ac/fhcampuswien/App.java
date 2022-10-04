@@ -151,7 +151,7 @@ public class App {
 
         happyDisplay.sayN();
         int number = happyInput.getNumber();
-        while(true) {
+        while (true) {
             int nextNumber = happyCalculator.getNextNumber(number);
             number = nextNumber;
             if (number == 1) {
