@@ -108,7 +108,7 @@ public class App {
         char character = rhombusInput.getCharacter();
         boolean heightIsValid = rhombusValidator.validateHeight(height);
         if (heightIsValid) {
-            rhombusDisplay.showRhombus(character);
+            rhombusDisplay.showRhombus(character, height);
         } else {
             rhombusDisplay.showInvalidNumber();
         }
